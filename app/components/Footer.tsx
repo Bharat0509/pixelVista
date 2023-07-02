@@ -26,7 +26,7 @@ function Footer({}: Props) {
             <div className='flex flex-col gap-12 w-full'>
                 <div className='flex items-start flex-col'>
                     <Image
-                        src={"/logo-purple.svg"}
+                        src={"/logoSecondary.svg"}
                         width={150}
                         height={38}
                         alt='Flexible'
