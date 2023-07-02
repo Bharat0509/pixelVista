@@ -11,6 +11,7 @@ import {
 import { ProjectForm } from "@/typing";
 import { GraphQLClient } from "graphql-request";
 const isProduction = process.env.NODE_ENV === "production";
+console.log(isProduction);
 
 const apiUrl = isProduction
     ? process.env.NEXT_PUBLIC_GRAFBASE_API_URl!
