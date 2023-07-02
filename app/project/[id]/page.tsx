@@ -65,7 +65,6 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                     </div>
                 )}
             </section>
-
             <section className='mt-14'>
                 <Image
                     src={`${projectDetails?.image}`}
@@ -75,7 +74,6 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                     alt='poster'
                 />
             </section>
-
             <section className='flexCenter flex-col mt-20'>
                 <p className='max-w-5xl text-xl font-normal'>
                     {projectDetails?.description}
@@ -101,7 +99,6 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                     </Link>
                 </div>
             </section>
-
             <section className='flexCenter w-full gap-8 mt-28'>
                 <span className='w-full h-0.5 bg-light-white-200' />
                 <Link href={renderLink()} className='min-w-[82px] h-[82px]'>
@@ -115,7 +112,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                 </Link>
                 <span className='w-full h-0.5 bg-light-white-200' />
             </section>
-            {/* @ts-expect-error Server Component */}
+
             <RelatedProjects
                 userId={projectDetails?.createdBy?.id}
                 projectId={projectDetails?.id}
