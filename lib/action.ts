@@ -23,7 +23,7 @@ const serverUrl = isProduction
     ? process.env.NEXT_PUBLIC_URL!
     : "http://localhost:3000";
 
-const client = new GraphQLClient("http://127.0.0.1:4000/graphql");
+const client = new GraphQLClient(apiUrl);
 
 const makeGraphQLRequest = async (query: string, variables = {}) => {
     try {
