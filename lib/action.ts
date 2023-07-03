@@ -24,7 +24,9 @@ const serverUrl = isProduction
     ? process.env.NEXT_PUBLIC_URL!
     : "http://localhost:3000";
 
-const client = new GraphQLClient(apiUrl);
+const client = new GraphQLClient(
+    "https://pixelvista-master-bharat0509.grafbase.app/graphql"
+);
 
 const makeGraphQLRequest = async (query: string, variables = {}) => {
     try {
