@@ -2,8 +2,9 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
-    title: "Flexible ",
-    description: "Showcase and discover remarkable developer projects",
+    title: "PixelVista ",
+    description:
+        "Showcase and discover remarkable developer projects and Design from people across the words",
 };
 
 export default function RootLayout({
